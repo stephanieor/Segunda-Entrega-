@@ -5,28 +5,31 @@
 
 <meta charset="utf-8">
 <title>Animitas</title>
+<!-- Search Engine -->
+<meta name="description" content="Refugios para el Alma">
 
-
+<title>Animitas</title>
+<!-- Search Engine -->
 <meta name="description" content="Refugios para el Alma">
 <meta name="image" content="https://tvfotografia.files.wordpress.com/2012/09/vhraste.jpg">
-
+<!-- Schema.org for Google -->
 <meta itemprop="name" content="Animitas">
 <meta itemprop="description" content="Refugios para el Alma">
 <meta itemprop="image" content="https://tvfotografia.files.wordpress.com/2012/09/vhraste.jpg">
-
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
 <meta name="og:title" content="Animitas">
 <meta name="og:description" content="Refugios para el Alma">
 <meta name="og:type" content="website">
- 
-
    
+
+    <!-- Vamos a buscar el CSS de Bootstrap -->
     <link rel="icon" href="media/fav-icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <!--Vamos a buscar el CSS de Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-   
+    <!-- Vamos por nuestro CSS, basado en https://startbootstrap.com/template-overviews/grayscale/ -->
 
-   
+    <!-- Aquí vamos por el estilo y script del mapa-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
 
     <link href="./css/style.css" rel="stylesheet">
@@ -34,7 +37,7 @@
 </head>
 
 <body id="page-top">
-
+    <!-- Navigation -->
   
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
@@ -57,11 +60,11 @@
             </div>
         </div>
     </nav>
-
+    <!-- Este encabezado viene de https://startbootstrap.com/snippets/video-header/ -->
     <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-     
+            <!--Favor revisar https://www.w3schools.com/html/html5_video.asp-->
             <source src="media/videoAnimitas.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
@@ -75,7 +78,7 @@
                
         </div>
     </header>
-
+    <!-- About Section -->
     <section id="about" class="about-section text-center">
         <div class="container">
             <div class="row">
@@ -88,11 +91,11 @@
         </div>
     </section>
 
-   
+    <!-- dataviz Section -->
     <section id="dataviz" class="dataviz-section bg-light">
         <div class="container">
 
-        
+            <!-- MAPA -->
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
                     <div id="leaflet"></div>
@@ -107,7 +110,7 @@
                 </div>
             </div>
 
-    
+            <!-- PRIMER GRÁFICO -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                 <div class="col-lg-6">
                     <svg id="gBarras" width="500" height="320"></svg>
@@ -126,7 +129,7 @@
                 </div>
             </div>
 
-     
+            <!-- SEGUNDO GRÁFICO -->
             <div class="row justify-content-center no-gutters">
                 <div class="col-lg-6">
                     <div id="gTorta"></div>
@@ -147,7 +150,7 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
         <div class="container">
             <p><span class="titular"></span> fue desarrollado por Nombre Apellido para Multimedia II</p>
@@ -159,15 +162,15 @@
 
      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 
- 
+    <!-- Vamos a buscar algo de JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  
+    <!--el tema de bootstrap que usamos necesita este script para funcionar-->
     <script src="js/theme.js"></script>
 
-    
+    <!--luego voy a buscar una biblioteca que Data Driven Documents (DDD = d3)-->
 
     <script src="./js/d3.min.js"></script>
 
