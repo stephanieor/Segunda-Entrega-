@@ -187,12 +187,6 @@ header .overlay {
   }
 }
 
-img {
-    height: auto;
-    width:700px;
-    padding-bottom: 45px;
-}
-
 img:hover {filter: grayscale(80%);
 }
 
